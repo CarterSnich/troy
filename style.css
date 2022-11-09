@@ -45,7 +45,6 @@ body {
 
 	scroll-snap-type: y mandatory;
 	scroll-snap-points-y: repeat(100vh);
-	outline: 1px solid red;
 }
 
 nav {
@@ -266,7 +265,20 @@ footer {
 	##Screen = B/w 768px to 1024px
   */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	/* CSS */
+	main {
+		padding-block: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		gap: 5.25rem;
+	}
+
+	.section {
+		height: unset;
+	}
+
+	.section-lines {
+		padding: unset;
+	}
 }
 
 /* 
@@ -274,7 +286,34 @@ footer {
 	##Screen = B/w 481px to 767px
   */
 @media (min-width: 481px) and (max-width: 767px) {
-	/* CSS */
+	main {
+		padding-block: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		gap: 5.25rem;
+	}
+
+	.section {
+		height: unset;
+	}
+
+	.section-content {
+		display: flex;
+		flex-direction: column;
+
+		gap: 1.25rem;
+		width: 80vw;
+	}
+
+	.section-content > img {
+		margin-inline: auto;
+		height: auto;
+		width: 75vw;
+	}
+
+	.section-lines {
+		padding: unset;
+	}
 }
 
 /* 
@@ -282,6 +321,17 @@ footer {
 	##Screen = B/w 320px to 479px
   */
 @media (min-width: 320px) and (max-width: 480px) {
+	main {
+		padding-block: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		gap: 5.25rem;
+	}
+
+	.section {
+		height: unset;
+	}
+
 	.section-lines {
 		padding: unset;
 	}
